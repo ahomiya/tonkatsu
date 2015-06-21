@@ -1,7 +1,7 @@
 {
   "name": "Tonkatsu",
   "version": "1.0.0",
-  "description": "Tonkatsu is an user-agent detection script",
+  "description": "Tonkatsu is an user-agent detection plugin",
   "repository": {
     "type": "git",
     "url": "https://github.com/ahomiya/tonkatus.git"
