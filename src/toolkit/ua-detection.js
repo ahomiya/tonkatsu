@@ -30,7 +30,7 @@ if(agent.os.name == 'Android') {
   html.className += ' OS-Android';
 }
 
-html.className += ' OS-' + agent.os.version;
+// html.className += ' OS-' + agent.os.version;
 
 // -----------------------------------------------------------------------------
 // Browser
@@ -54,7 +54,7 @@ if(agent.browser.name == 'IE') {
   }
 }
 
-html.className += ' Browser-' + agent.browser.major;
+// html.className += ' Browser-' + agent.browser.major;
 
 // Native Android Browser
 var navU = navigator.userAgent;
