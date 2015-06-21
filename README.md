@@ -1,4 +1,4 @@
-# [Tonkatus](https://github.com/ahomiya/tonkatsu)
+# [Tonkatsu](https://github.com/ahomiya/tonkatsu)
 
 トンカツ (Tonkatsu) is a Japanese food which consists of a breaded, deep-fried pork cutlet.
 
