@@ -11,7 +11,7 @@ var packages        = './packages'                            // Packages
 // Globs
 var js              = {
     src             : './src',                                // Sources
-    dist            : './dist'                                // Distribution
+    dist            : './dist/toolkit'                        // Distribution
 };
 
 // -----------------------------------------------------------------------------
@@ -23,7 +23,7 @@ var packages        = {
       packages + '/ua-parser-js/src/ua-parser.js'             // UA - Parser
     ],
     detection       : [
-      js.src + '/ua-detection.js'                             // UA - Detection
+      js.src + '/toolkit/ua-detection.js'                     // UA - Detection
     ]
   }
 
