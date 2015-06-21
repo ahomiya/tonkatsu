@@ -10,21 +10,20 @@ var packages        = './packages'                            // Packages
 // -----------------------------------------------------------------------------
 // Globs
 var js              = {
-    src             : './src',                               // JS - Sources
-    dist            : './dist'                               // JS - Distribution
+    src             : './src',                                // Sources
+    dist            : './dist'                                // Distribution
 };
 
 // -----------------------------------------------------------------------------
 // Packages
 var packages        = {
 
-  // JavaScript libraries
   js: {
     parser          : [
-      packages + '/ua-parser-js/src/ua-parser.js'
+      packages + '/ua-parser-js/src/ua-parser.js'             // UA - Parser
     ],
     detection       : [
-      js.src + '/ua-detection.js'
+      js.src + '/ua-detection.js'                             // UA - Detection
     ]
   }
 
@@ -32,17 +31,17 @@ var packages        = {
 
 // -----------------------------------------------------------------------------
 // Build tasks
-// Concatenating, minifying, and optimizing files
+// Concatenating, minifying, optimizing and organizing files
 
 // Minified
-gulp.task('js.build:detection.minify', function() {
+gulp.task('build:js.detection.minify', function() {
   return gulp.src(packages.js.detection)
     .pipe(concat('ua-detection.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest(js.dist));
 });
 
-gulp.task('js.build:parser.minify', function() {
+gulp.task('build:js.parser.minify', function() {
   return gulp.src(packages.js.parser)
     .pipe(concat('ua-parser.min.js'))
     .pipe(uglify())
@@ -50,12 +49,12 @@ gulp.task('js.build:parser.minify', function() {
 });
 
 // Custom
-gulp.task('js.build:detection.custom', function() {
+gulp.task('build:js.detection.custom', function() {
   return gulp.src(packages.js.detection)
     .pipe(gulp.dest(js.dist));
 });
 
-gulp.task('js.build:parser.custom', function() {
+gulp.task('build:js.parser.custom', function() {
   return gulp.src(packages.js.parser)
     .pipe(gulp.dest(js.dist));
 });
